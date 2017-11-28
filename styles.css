@@ -27,18 +27,19 @@
 }
 
 .mouth {
-  width: 40%;
-  height: 10%;
-  top: 55%;
-  left: 26%;
-  margin: 0 auto;
+  width: 24%;
+  height: 42%;
+  top: 50%;
   position: absolute;
   border-radius: 50%;
-  border: 5px solid transparent;
-  border-bottom-color: black;
-  animation: mouth-rotation 2s 1s infinite alternate;  
+  background-color: black;
+  left: 50%; 
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+ // animation: mouth-rotation 2s 1s infinite alternate;  
 }
-
+/**
 @keyframes mouth-rotation {
   50%  {
   width: 40%;
@@ -71,3 +72,4 @@
   position: absolute;
   }
 }
+*/
