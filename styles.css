@@ -5,12 +5,37 @@
   border-radius: 50%;
   position: relative;
 }
+
+.righteyebrow {
+  border-left: thick solid black;
+  border-radius: 50%;
+  width: 10%;
+  height: 19%;
+  top: 5%;
+  left: 65%;
+  margin: 0 auto;
+  position: absolute;
+  -webkit-transform: rotate(100deg);
+}
+
+.lefteyebrow {
+  border-left: thick solid black;
+  border-radius: 50%;
+  width: 10%;
+  height: 19%;
+  top: 5%;
+  left: 20%;
+  margin: 0 auto;
+  position: absolute;
+  -webkit-transform: rotate(80deg);
+}
+
 .lefteye {
   background-color: #000000;
   border-radius: 50%;
   width: 15%;
   height: 22%;
-  top: 20%;
+  top: 24%;
   left: 21%;
   margin: 0 auto;
   position: absolute;
@@ -21,7 +46,7 @@
   border-radius: 50%;
   width: 15%;
   height: 22%;
-  top: 20%;
+  top: 24%;
   left: 64%;
   margin: 0 auto;
   position: absolute;
