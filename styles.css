@@ -1,7 +1,11 @@
+body {
+	--size: 400px;
+}	
+
 .face {
   background-color: #ffd665;
-  height: 200px;
-  width: 200px;
+  height: var(--size);
+  width: var(--size);
   border-radius: 50%;
   position: absolute;
 }
@@ -9,55 +13,31 @@
 .faceport {
 	animation: face-rotate 5s infinite;  
 	position: relative;
-	height: 200px;
-	width: 200px;
+	height: var(--size);
+	width: var(--size);
 	border-radius: 50%;
 }	
 
-.righteyebrow1 {
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  width: 12%;
-  height: 6%;
-  background-color: black;
-  top: 5%;
-  left: 66%;
-  margin: 0 auto;
-  position: absolute;
-}
-.righteyebrow2 {
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  width: 10%;
-  height: 5%;
-  background-color: #ffd665;
-  top: 7%;
-  left: 67%;
-  margin: 0 auto;
-  position: absolute;
+.righteyebrow {
+    width: 12%;
+    height: 12%;
+	top: 5%;
+	left: 63%;
+    border: solid calc(var(--size)/40);
+    border-color: black transparent transparent transparent;
+    border-radius: 50%;
+	position: absolute;
 }
 
-.lefteyebrow1 {
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  width: 12%;
-  height: 6%;
-  background-color: black;
-  top: 5%;
-  left: 21%;
-  margin: 0 auto;
-  position: absolute;
-}
-.lefteyebrow2 {
-  border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  width: 10%;
-  height: 5%;
-  background-color: #ffd665;
-  top: 7%;
-  left: 22%;
-  margin: 0 auto;
-  position: absolute;
+.lefteyebrow {
+    width: 12%;
+    height: 12%;
+	top: 5%;
+	left: 20%;
+    border: solid calc(var(--size)/40);
+    border-color: black transparent transparent transparent;
+    border-radius: 50%;
+	position: absolute;
 }
 
 .lefteye {
