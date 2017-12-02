@@ -76,7 +76,11 @@ body {
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
- // animation: mouth-rotation 2s 1s infinite alternate;  
+ /* animation: mouth-up 5s infinite; */
+}
+
+.moutheyes {
+  /* animation: eyes-up 5s infinite; */
 }
 
 @keyframes blink {
@@ -98,18 +102,45 @@ body {
   }
 }
 
+@keyframes eyes-up {
+	0% {
+		transform: none;
+	}	
+	25% {
+		transform: translate(0, -20%);
+	}  
+	75% {
+		transform: translate(0, -20%);
+	}  
+	100% {
+		transform: none;
+	}	
+}
+
+@keyframes mouth-up {
+	0% {
+		transform: translate(-50%, 0);
+	}	
+  25% {
+	transform: translate(-50%, -20%);
+  }  
+  75% {
+	transform: translate(-50%, -20%);
+  }  
+	100% {
+		transform: translate(-50%, 0);
+	}	
+}	
+
 @keyframes face-rotate {
   0% {
 	transform: none;
   }  
   25% {
-	transform: rotate(10deg) translateX(-10%);
-  }  
-  50% {
-	transform: none;
+	transform: rotate(15deg) translateX(-10%);
   }  
   75% {
-	transform: rotate(-10deg) translateX(10%);
+	transform: rotate(-15deg) translateX(10%);
   }  
   100% {    
 	transform none;
