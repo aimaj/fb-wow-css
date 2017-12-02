@@ -6,28 +6,50 @@
   position: relative;
 }
 
-.righteyebrow {
-  border-left: thick solid black;
-  border-radius: 50%;
-  width: 10%;
-  height: 19%;
+.righteyebrow1 {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  width: 12%;
+  height: 6%;
+  background-color: black;
   top: 5%;
   left: 66%;
   margin: 0 auto;
   position: absolute;
-  -webkit-transform: rotate(100deg);
+}
+.righteyebrow2 {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  width: 10%;
+  height: 5%;
+  background-color: #ffd665;
+  top: 7%;
+  left: 67%;
+  margin: 0 auto;
+  position: absolute;
 }
 
-.lefteyebrow {
-  border-left: thick solid black;
-  border-radius: 50%;
-  width: 10%;
-  height: 19%;
+.lefteyebrow1 {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  width: 12%;
+  height: 6%;
+  background-color: black;
   top: 5%;
   left: 21%;
   margin: 0 auto;
   position: absolute;
-  -webkit-transform: rotate(80deg);
+}
+.lefteyebrow2 {
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  width: 10%;
+  height: 5%;
+  background-color: #ffd665;
+  top: 7%;
+  left: 22%;
+  margin: 0 auto;
+  position: absolute;
 }
 
 .lefteye {
