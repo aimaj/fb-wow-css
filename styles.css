@@ -123,13 +123,13 @@
 	transform: none;
   }  
   25% {
-	transform: rotate(10deg);
+	transform: rotate(10deg) translateX(-10%);
   }  
   50% {
 	transform: none;
   }  
   75% {
-	transform: rotate(-10deg);
+	transform: rotate(-10deg) translateX(10%);
   }  
   100% {    
 	transform none;
