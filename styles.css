@@ -11,7 +11,7 @@ body {
 }
 
 .faceport {
-	animation: face-rotate 5s infinite;  
+	animation: face-rotate 3s infinite;  
 	position: relative;
 	height: var(--size);
 	width: var(--size);
@@ -27,6 +27,7 @@ body {
     border-color: black transparent transparent transparent;
     border-radius: 50%;
 	position: absolute;
+	animation: eyebrows-down 3s infinite;
 }
 
 .lefteyebrow {
@@ -38,6 +39,7 @@ body {
     border-color: black transparent transparent transparent;
     border-radius: 50%;
 	position: absolute;
+	animation: eyebrows-down 3s infinite;
 }
 
 .lefteye {
@@ -50,7 +52,7 @@ body {
   margin: 0 auto;
   position: absolute;
   -webkit-transform: rotate(9deg);
-  animation: blink 3s infinite;
+  animation: blink 1s infinite, eyes-up 3s infinite;
 }
 .righteye {
   background-color: #000000;
@@ -62,7 +64,7 @@ body {
   margin: 0 auto;
   position: absolute;
   -webkit-transform: rotate(-9deg);
-  animation: blink 3s infinite;
+  animation: blink 1s infinite, eyes-up 3s infinite;
 }
 
 .mouth {
@@ -76,11 +78,7 @@ body {
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
- /* animation: mouth-up 5s infinite; */
-}
-
-.moutheyes {
-  /* animation: eyes-up 5s infinite; */
+  animation: mouth-up 3s infinite;
 }
 
 @keyframes blink {
@@ -107,10 +105,25 @@ body {
 		transform: none;
 	}	
 	25% {
-		transform: translate(0, -20%);
+		transform: translate(0, -40%);
 	}  
 	75% {
-		transform: translate(0, -20%);
+		transform: translate(0, -40%);
+	}  
+	100% {
+		transform: none;
+	}	
+}
+
+@keyframes eyebrows-down {
+	0% {
+		transform: none;
+	}	
+	25% {
+		transform: translate(0, 20%);
+	}  
+	75% {
+		transform: translate(0, 20%);
 	}  
 	100% {
 		transform: none;
@@ -119,10 +132,19 @@ body {
 
 @keyframes mouth-up {
 	0% {
+		width: 24%;
+		height: 42%;
 		transform: translate(-50%, 0);
 	}	
   25% {
 	transform: translate(-50%, -20%);
+	height: 15%;
+	width: 15%;
+  }  
+  50% {
+	transform: translate(-50%, -20%);
+  width: 24%;
+  height: 42%;
   }  
   75% {
 	transform: translate(-50%, -20%);
