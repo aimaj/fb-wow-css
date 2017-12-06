@@ -1,203 +1,159 @@
 body {
-	--size: 400px;
-}	
-
-.face {
-  background-color: #ffd665;
-  height: var(--size);
-  width: var(--size);
-  border-radius: 50%;
-  position: absolute;
+    --size: 400px;
 }
-
+.face {
+    background-color: #ffd665;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    position: absolute;
+}
 .faceport {
-	animation: face-rotate 3s infinite;  
-	position: relative;
-	height: var(--size);
-	width: var(--size);
-	border-radius: 50%;
-}	
-
+    animation: face-rotate 3s infinite;
+    position: relative;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+}
 .righteyebrow {
     width: 12%;
     height: 12%;
-	top: 5%;
-	left: 63%;
+    top: 5%;
+    left: 63%;
     border: solid calc(var(--size)/40);
     border-color: black transparent transparent transparent;
     border-radius: 50%;
-	position: absolute;
-	animation: eyebrows-down 3s infinite;
+    position: absolute;
+    animation: eyebrows-down 3s infinite;
 }
-
 .lefteyebrow {
     width: 12%;
     height: 12%;
-	top: 5%;
-	left: 20%;
+    top: 5%;
+    left: 20%;
     border: solid calc(var(--size)/40);
     border-color: black transparent transparent transparent;
     border-radius: 50%;
-	position: absolute;
-	animation: eyebrows-down 3s infinite;
+    position: absolute;
+    animation: eyebrows-down 3s infinite;
 }
-
 .lefteye {
-  background-color: #000000;
-  border-radius: 50%;
-  width: 15%;
-  height: 22%;
-  top: 24%;
-  left: 21%;
-  margin: 0 auto;
-  position: absolute;
-  -webkit-transform: rotate(9deg);
-  animation: blink 1s infinite, eyes-up 3s infinite;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 15%;
+    height: 22%;
+    top: 24%;
+    left: 21%;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transform: rotate(9deg);
+    animation: blink 1s infinite, eyes-up 3s infinite;
 }
 .righteye {
-  background-color: #000000;
-  border-radius: 50%;
-  width: 15%;
-  height: 22%;
-  top: 24%;
-  left: 64%;
-  margin: 0 auto;
-  position: absolute;
-  -webkit-transform: rotate(-9deg);
-  animation: blink 1s infinite, eyes-up 3s infinite;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 15%;
+    height: 22%;
+    top: 24%;
+    left: 64%;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transform: rotate(-9deg);
+    animation: blink 1s infinite, eyes-up 3s infinite;
 }
-
 .mouth {
-  width: 24%;
-  height: 42%;
-  top: 50%;
-  position: absolute;
-  border-radius: 50%;
-  background-color: black;
-  left: 50%; 
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  animation: mouth-up 3s infinite;
+    width: 24%;
+    height: 42%;
+    top: 50%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    animation: mouth-up 3s infinite;
 }
-
 @keyframes blink {
-  0% {
-    height: 22%;
-    top: 24%;
-  }
-  10% {
-    height: 2%;
-    top: 30%;
-  }
-  20% {
-    height: 22%;
-    top: 24%;
-  }
-  100% {
-    height: 22%;
-    top: 24%;
-  }
+    0% {
+        height: 22%;
+        top: 24%;
+    }
+    10% {
+        height: 2%;
+        top: 30%;
+    }
+    20% {
+        height: 22%;
+        top: 24%;
+    }
+    100% {
+        height: 22%;
+        top: 24%;
+    }
 }
-
 @keyframes eyes-up {
-	0% {
-		transform: none;
-	}	
-	25% {
-		transform: translate(0, -40%);
-	}  
-	75% {
-		transform: translate(0, -40%);
-	}  
-	100% {
-		transform: none;
-	}	
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: translate(0, -40%);
+    }
+    75% {
+        transform: translate(0, -40%);
+    }
+    100% {
+        transform: none;
+    }
 }
-
 @keyframes eyebrows-down {
-	0% {
-		transform: none;
-	}	
-	25% {
-		transform: translate(0, 20%);
-	}  
-	75% {
-		transform: translate(0, 20%);
-	}  
-	100% {
-		transform: none;
-	}	
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: translate(0, 20%);
+    }
+    75% {
+        transform: translate(0, 20%);
+    }
+    100% {
+        transform: none;
+    }
 }
-
 @keyframes mouth-up {
-	0% {
-		width: 24%;
-		height: 42%;
-		transform: translate(-50%, 0);
-	}	
-  25% {
-	transform: translate(-50%, -20%);
-	height: 15%;
-	width: 15%;
-  }  
-  50% {
-	transform: translate(-50%, -20%);
-  width: 24%;
-  height: 42%;
-  }  
-  75% {
-	transform: translate(-50%, -20%);
-  }  
-	100% {
-		transform: translate(-50%, 0);
-	}	
-}	
-
-@keyframes face-rotate {
-  0% {
-	transform: none;
-  }  
-  25% {
-	transform: rotate(15deg) translateX(-10%);
-  }  
-  75% {
-	transform: rotate(-15deg) translateX(10%);
-  }  
-  100% {    
-	transform none;
-  }
+    0% {
+        width: 24%;
+        height: 42%;
+        transform: translate(-50%, 0);
+    }
+    25% {
+        transform: translate(-50%, -20%);
+        height: 15%;
+        width: 15%;
+    }
+    50% {
+        transform: translate(-50%, -20%);
+        width: 24%;
+        height: 42%;
+    }
+    75% {
+        transform: translate(-50%, -20%);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
-
-@keyframes mouth-rotation {
-  50%  {
-  width: 40%;
-  height: 10%;
-  top: 55%;
-  left: 26%;
-  margin: 0 auto;
-  position: absolute;
-  border-radius: 50%;
-  border: 5px solid transparent;
-  border-bottom-color: black;
-  }
-  0%  {
-  width: 40%;
-  height: 5%;
-  background-color: black;
-  top: 65%;
-  left: 30%;
-  margin: 0 auto;
-  position: absolute;
-  }
-  100% {  
-  background-color: black;
-  border-radius: 50% 50% 0 0;
-  width: 20%;
-  height: 20%;
-  top: 60%;
-  left: 40%;
-  margin: 0 auto;
-  position: absolute;
-  }
+@keyframes face-rotate {
+    0% {
+        transform: none;
+    }
+    25% {
+        transform: rotate(15deg) translateX(-10%);
+    }
+    75% {
+        transform: rotate(-15deg) translateX(10%);
+    }
+    100% {
+        transform none;
+    }
 }
